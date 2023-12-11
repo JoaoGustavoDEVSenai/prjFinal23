@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cadastro e pesquisa de jogos</title>
+  <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Cadastro de Jogos</h1>
+  <div id="cadastro">
+      <h2>Cadastro de Jogo</h2>
+      <form id="cadastroForm" enctype="multipart/form-data">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required><br>
+
+          <label for="plataform">Plataforma:</label>
+          <input type="text" id="plataform" name="plataform" required><br>
+          
+          <label for="integrantes">Integrantes:</label>
+          <input type="text" id="integrantes" name="integrantes" required><br>
+          
+           <label for="squad">Squad:</label>
+          <input type="text" id="squad" name="squad" required><br>
+
+          <label for="url">URL:</label>
+          <input type="text" id="url" name="url" required><br>
+          
+          <label for="thumbnailpath">Thumbnail:</label>
+          <input type="text" id="thumbnailpath" name="thumbnailpath" required><br>
+       
+          <button type="button" onclick="cadastrarJogo()">✔Cadastrar</button>
+          <button type="button" onclick="excluirJogo()">❌Excluir</button>
+      </form>
+       <div id="divimagem">
+    <h2>Lista de Jogos</h2><br>
+          <button type="button" onclick="ListarJogos()">🔎Pesquisar</button>
+          <header>
+      
+      </header>
+
+      <aside>
+          <!-- Barra lateral, se necessário -->
+        </aside>
+
+      <main>
+        <table class="style-tabela" id="jogos-tabela">
+            <thead>
+                <tr>
+                    <th>| ID  | </th>
+                    <th>Nome do Jogo |</th>
+                    <th>Plataforma  |</th>
+                    <th>Integrantes  |</th>
+                    <th>Squad  |</th>
+                    <th>URL |</th>
+                    <th>Imagem |</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- A tabela de funcionários será carregada aqui -->
+            </tbody>
+        </table>
+      </div>
+  </div> 
+  <script src="main.js"></script>
+</body>
